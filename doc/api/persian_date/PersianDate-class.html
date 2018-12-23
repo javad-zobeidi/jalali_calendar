@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the PersianDate class from the persian_date library, for the Dart programming language.">
+  <title>PersianDate class - persian_date library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">jalali_calendar</a></li>
+    <li><a href="persian_date/persian_date-library.html">persian_date</a></li>
+    <li class="self-crumb">PersianDate class</li>
+  </ol>
+  <div class="self-name">PersianDate</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>persian_date library</h5>
+    <ol>
+      <li class="section-title"><a href="persian_date/persian_date-library.html#classes">Classes</a></li>
+      <li><a href="persian_date/DatePicker-class.html">DatePicker</a></li>
+      <li><a href="persian_date/DayPicker-class.html">DayPicker</a></li>
+      <li><a href="persian_date/MonthPicker-class.html">MonthPicker</a></li>
+      <li><a href="persian_date/PersianDate-class.html">PersianDate</a></li>
+      <li><a href="persian_date/YearPicker-class.html">YearPicker</a></li>
+    
+    
+      <li class="section-title"><a href="persian_date/persian_date-library.html#constants">Constants</a></li>
+      <li><a href="persian_date/AM-constant.html">AM</a></li>
+      <li><a href="persian_date/am-constant.html">am</a></li>
+      <li><a href="persian_date/D-constant.html">D</a></li>
+      <li><a href="persian_date/d-constant.html">d</a></li>
+      <li><a href="persian_date/DD-constant.html">DD</a></li>
+      <li><a href="persian_date/dd-constant.html">dd</a></li>
+      <li><a href="persian_date/H-constant.html">H</a></li>
+      <li><a href="persian_date/h-constant.html">h</a></li>
+      <li><a href="persian_date/HH-constant.html">HH</a></li>
+      <li><a href="persian_date/hh-constant.html">hh</a></li>
+      <li><a href="persian_date/leapYearMonths-constant.html">leapYearMonths</a></li>
+      <li><a href="persian_date/M-constant.html">M</a></li>
+      <li><a href="persian_date/m-constant.html">m</a></li>
+      <li><a href="persian_date/MM-constant.html">MM</a></li>
+      <li><a href="persian_date/mm-constant.html">mm</a></li>
+      <li><a href="persian_date/n-constant.html">n</a></li>
+      <li><a href="persian_date/nn-constant.html">nn</a></li>
+      <li><a href="persian_date/S-constant.html">S</a></li>
+      <li><a href="persian_date/s-constant.html">s</a></li>
+      <li><a href="persian_date/ss-constant.html">ss</a></li>
+      <li><a href="persian_date/SSS-constant.html">SSS</a></li>
+      <li><a href="persian_date/u-constant.html">u</a></li>
+      <li><a href="persian_date/uuu-constant.html">uuu</a></li>
+      <li><a href="persian_date/w-constant.html">w</a></li>
+      <li><a href="persian_date/yy-constant.html">yy</a></li>
+      <li><a href="persian_date/yyyy-constant.html">yyyy</a></li>
+    
+    
+      <li class="section-title"><a href="persian_date/persian_date-library.html#functions">Functions</a></li>
+      <li><a href="persian_date/jalaliCalendarPicker.html">jalaliCalendarPicker</a></li>
+    
+      <li class="section-title"><a href="persian_date/persian_date-library.html#enums">Enums</a></li>
+      <li><a href="persian_date/DatePickerMode-class.html">DatePickerMode</a></li>
+    
+      <li class="section-title"><a href="persian_date/persian_date-library.html#typedefs">Typedefs</a></li>
+      <li><a href="persian_date/DateChangedCallback.html">DateChangedCallback</a></li>
+      <li><a href="persian_date/SelectableDayPredicate.html">SelectableDayPredicate</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <h1>PersianDate class </h1>
+
+    
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="PersianDate" class="callable">
+          <span class="name"><a href="persian_date/PersianDate/PersianDate.html">PersianDate</a></span><span class="signature">([<span class="parameter" id="-param-format"><span class="type-annotation">String</span> <span class="parameter-name">format</span></span> ])</span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="PersianDate.pDate" class="callable">
+          <span class="name"><a href="persian_date/PersianDate/PersianDate.pDate.html">PersianDate.pDate</a></span><span class="signature">({<span class="parameter" id="pDate-param-defualtFormat"><span class="type-annotation">String</span> <span class="parameter-name">defualtFormat</span>, </span> <span class="parameter" id="pDate-param-gregorian"><span class="type-annotation">String</span> <span class="parameter-name">gregorian</span></span> })</span>
+        </dt>
+        <dd>
+          
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="day" class="property">
+          <span class="name"><a href="persian_date/PersianDate/day.html">day</a></span>
+          <span class="signature">&#8594; int</span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="dayLong" class="property">
+          <span class="name"><a href="persian_date/PersianDate/dayLong.html">dayLong</a></span>
+          <span class="signature">&#8596; List<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read / write</div>
+</dd>
+        <dt id="dayShort" class="property">
+          <span class="name"><a href="persian_date/PersianDate/dayShort.html">dayShort</a></span>
+          <span class="signature">&#8596; List<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read / write</div>
+</dd>
+        <dt id="getDate" class="property">
+          <span class="name"><a href="persian_date/PersianDate/getDate.html">getDate</a></span>
+          <span class="signature">&#8594; String</span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="getNow" class="property">
+          <span class="name"><a href="persian_date/PersianDate/getNow.html">getNow</a></span>
+          <span class="signature">&#8594; String</span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hour" class="property">
+          <span class="name"><a href="persian_date/PersianDate/hour.html">hour</a></span>
+          <span class="signature">&#8594; int</span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="isHoliday" class="property">
+          <span class="name"><a href="persian_date/PersianDate/isHoliday.html">isHoliday</a></span>
+          <span class="signature">&#8594; bool</span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="microsecond" class="property">
+          <span class="name"><a href="persian_date/PersianDate/microsecond.html">microsecond</a></span>
+          <span class="signature">&#8594; int</span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="millisecond" class="property">
+          <span class="name"><a href="persian_date/PersianDate/millisecond.html">millisecond</a></span>
+          <span class="signature">&#8594; int</span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="minute" class="property">
+          <span class="name"><a href="persian_date/PersianDate/minute.html">minute</a></span>
+          <span class="signature">&#8594; int</span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="month" class="property">
+          <span class="name"><a href="persian_date/PersianDate/month.html">month</a></span>
+          <span class="signature">&#8594; int</span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="monthLong" class="property">
+          <span class="name"><a href="persian_date/PersianDate/monthLong.html">monthLong</a></span>
+          <span class="signature">&#8596; List<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read / write</div>
+</dd>
+        <dt id="monthname" class="property">
+          <span class="name"><a href="persian_date/PersianDate/monthname.html">monthname</a></span>
+          <span class="signature">&#8594; String</span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="monthShort" class="property">
+          <span class="name"><a href="persian_date/PersianDate/monthShort.html">monthShort</a></span>
+          <span class="signature">&#8596; List<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read / write</div>
+</dd>
+        <dt id="second" class="property">
+          <span class="name"><a href="persian_date/PersianDate/second.html">second</a></span>
+          <span class="signature">&#8594; int</span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="setDay" class="property">
+          <span class="name"><a href="persian_date/PersianDate/setDay.html">setDay</a></span>
+          <span class="signature">&#8592; <span class="parameter" id="setDay=-param-value"><span class="type-annotation">int</span></span></span> 
+        </dt>
+        <dd>
+          
+          <div class="features">write-only</div>
+</dd>
+        <dt id="setHour" class="property">
+          <span class="name"><a href="persian_date/PersianDate/setHour.html">setHour</a></span>
+          <span class="signature">&#8592; <span class="parameter" id="setHour=-param-value"><span class="type-annotation">int</span></span></span> 
+        </dt>
+        <dd>
+          
+          <div class="features">write-only</div>
+</dd>
+        <dt id="setMicrosecond" class="property">
+          <span class="name"><a href="persian_date/PersianDate/setMicrosecond.html">setMicrosecond</a></span>
+          <span class="signature">&#8592; <span class="parameter" id="setMicrosecond=-param-value"><span class="type-annotation">int</span></span></span> 
+        </dt>
+        <dd>
+          
+          <div class="features">write-only</div>
+</dd>
+        <dt id="setMillisecond" class="property">
+          <span class="name"><a href="persian_date/PersianDate/setMillisecond.html">setMillisecond</a></span>
+          <span class="signature">&#8592; <span class="parameter" id="setMillisecond=-param-value"><span class="type-annotation">int</span></span></span> 
+        </dt>
+        <dd>
+          
+          <div class="features">write-only</div>
+</dd>
+        <dt id="setMinute" class="property">
+          <span class="name"><a href="persian_date/PersianDate/setMinute.html">setMinute</a></span>
+          <span class="signature">&#8592; <span class="parameter" id="setMinute=-param-value"><span class="type-annotation">int</span></span></span> 
+        </dt>
+        <dd>
+          
+          <div class="features">write-only</div>
+</dd>
+        <dt id="setMonth" class="property">
+          <span class="name"><a href="persian_date/PersianDate/setMonth.html">setMonth</a></span>
+          <span class="signature">&#8592; <span class="parameter" id="setMonth=-param-value"><span class="type-annotation">int</span></span></span> 
+        </dt>
+        <dd>
+          
+          <div class="features">write-only</div>
+</dd>
+        <dt id="setSecond" class="property">
+          <span class="name"><a href="persian_date/PersianDate/setSecond.html">setSecond</a></span>
+          <span class="signature">&#8592; <span class="parameter" id="setSecond=-param-value"><span class="type-annotation">int</span></span></span> 
+        </dt>
+        <dd>
+          
+          <div class="features">write-only</div>
+</dd>
+        <dt id="setWeekday" class="property">
+          <span class="name"><a href="persian_date/PersianDate/setWeekday.html">setWeekday</a></span>
+          <span class="signature">&#8592; <span class="parameter" id="setWeekday=-param-value"><span class="type-annotation">int</span></span></span> 
+        </dt>
+        <dd>
+          
+          <div class="features">write-only</div>
+</dd>
+        <dt id="setYear" class="property">
+          <span class="name"><a href="persian_date/PersianDate/setYear.html">setYear</a></span>
+          <span class="signature">&#8592; <span class="parameter" id="setYear=-param-value"><span class="type-annotation">int</span></span></span> 
+        </dt>
+        <dd>
+          
+          <div class="features">write-only</div>
+</dd>
+        <dt id="shamsiHoliday" class="property">
+          <span class="name"><a href="persian_date/PersianDate/shamsiHoliday.html">shamsiHoliday</a></span>
+          <span class="signature">&#8596; List<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read / write</div>
+</dd>
+        <dt id="weekday" class="property">
+          <span class="name"><a href="persian_date/PersianDate/weekday.html">weekday</a></span>
+          <span class="signature">&#8594; int</span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="weekdayname" class="property">
+          <span class="name"><a href="persian_date/PersianDate/weekdayname.html">weekdayname</a></span>
+          <span class="signature">&#8594; String</span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="year" class="property">
+          <span class="name"><a href="persian_date/PersianDate/year.html">year</a></span>
+          <span class="signature">&#8594; int</span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="persian_date/PersianDate/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span> 
+        </dt>
+        <dd class="inherited">
+          The hash code for this object. <a href="persian_date/PersianDate/hashCode.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="persian_date/PersianDate/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span> 
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object.
+          <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="gregorianToJalali" class="callable">
+          <span class="name"><a href="persian_date/PersianDate/gregorianToJalali.html">gregorianToJalali</a></span><span class="signature">(<wbr><span class="parameter" id="gregorianToJalali-param-y"><span class="type-annotation">int</span> <span class="parameter-name">y</span>, </span> <span class="parameter" id="gregorianToJalali-param-m"><span class="type-annotation">int</span> <span class="parameter-name">m</span>, </span> <span class="parameter" id="gregorianToJalali-param-d"><span class="type-annotation">int</span> <span class="parameter-name">d</span>, [</span> <span class="parameter" id="gregorianToJalali-param-separator"><span class="type-annotation">String</span> <span class="parameter-name">separator</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+          </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="jalaliToGregorian" class="callable">
+          <span class="name"><a href="persian_date/PersianDate/jalaliToGregorian.html">jalaliToGregorian</a></span><span class="signature">(<wbr><span class="parameter" id="jalaliToGregorian-param-y"><span class="type-annotation">int</span> <span class="parameter-name">y</span>, </span> <span class="parameter" id="jalaliToGregorian-param-m"><span class="type-annotation">int</span> <span class="parameter-name">m</span>, </span> <span class="parameter" id="jalaliToGregorian-param-d"><span class="type-annotation">int</span> <span class="parameter-name">d</span>, [</span> <span class="parameter" id="jalaliToGregorian-param-separator"><span class="type-annotation">String</span> <span class="parameter-name">separator</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+          </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="parse" class="callable">
+          <span class="name"><a href="persian_date/PersianDate/parse.html">parse</a></span><span class="signature">(<wbr><span class="parameter" id="parse-param-formattedString"><span class="type-annotation">String</span> <span class="parameter-name">formattedString</span>, [</span> <span class="parameter" id="parse-param-separator"><span class="type-annotation">String</span> <span class="parameter-name">separator</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+          </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="parseToFormat" class="callable">
+          <span class="name"><a href="persian_date/PersianDate/parseToFormat.html">parseToFormat</a></span><span class="signature">(<wbr><span class="parameter" id="parseToFormat-param-parseDate"><span class="type-annotation">String</span> <span class="parameter-name">parseDate</span>, [</span> <span class="parameter" id="parseToFormat-param-format"><span class="type-annotation">String</span> <span class="parameter-name">format</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+          </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="persian_date/PersianDate/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+          </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed. <a href="persian_date/PersianDate/noSuchMethod.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="persian_date/PersianDate/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+          </dt>
+        <dd class="inherited">
+          Returns a string representation of this object.
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="persian_date/PersianDate/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+          </dt>
+        <dd class="inherited">
+          The equality operator. <a href="persian_date/PersianDate/operator_equals.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <ol>
+      <li class="section-title"><a href="persian_date/PersianDate-class.html#constructors">Constructors</a></li>
+      <li><a href="persian_date/PersianDate/PersianDate.html">PersianDate</a></li>
+      <li><a href="persian_date/PersianDate/PersianDate.pDate.html">pDate</a></li>
+    
+      <li class="section-title">
+        <a href="persian_date/PersianDate-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="persian_date/PersianDate/day.html">day</a></li>
+      <li><a href="persian_date/PersianDate/dayLong.html">dayLong</a></li>
+      <li><a href="persian_date/PersianDate/dayShort.html">dayShort</a></li>
+      <li><a href="persian_date/PersianDate/getDate.html">getDate</a></li>
+      <li><a href="persian_date/PersianDate/getNow.html">getNow</a></li>
+      <li><a href="persian_date/PersianDate/hour.html">hour</a></li>
+      <li><a href="persian_date/PersianDate/isHoliday.html">isHoliday</a></li>
+      <li><a href="persian_date/PersianDate/microsecond.html">microsecond</a></li>
+      <li><a href="persian_date/PersianDate/millisecond.html">millisecond</a></li>
+      <li><a href="persian_date/PersianDate/minute.html">minute</a></li>
+      <li><a href="persian_date/PersianDate/month.html">month</a></li>
+      <li><a href="persian_date/PersianDate/monthLong.html">monthLong</a></li>
+      <li><a href="persian_date/PersianDate/monthname.html">monthname</a></li>
+      <li><a href="persian_date/PersianDate/monthShort.html">monthShort</a></li>
+      <li><a href="persian_date/PersianDate/second.html">second</a></li>
+      <li><a href="persian_date/PersianDate/setDay.html">setDay</a></li>
+      <li><a href="persian_date/PersianDate/setHour.html">setHour</a></li>
+      <li><a href="persian_date/PersianDate/setMicrosecond.html">setMicrosecond</a></li>
+      <li><a href="persian_date/PersianDate/setMillisecond.html">setMillisecond</a></li>
+      <li><a href="persian_date/PersianDate/setMinute.html">setMinute</a></li>
+      <li><a href="persian_date/PersianDate/setMonth.html">setMonth</a></li>
+      <li><a href="persian_date/PersianDate/setSecond.html">setSecond</a></li>
+      <li><a href="persian_date/PersianDate/setWeekday.html">setWeekday</a></li>
+      <li><a href="persian_date/PersianDate/setYear.html">setYear</a></li>
+      <li><a href="persian_date/PersianDate/shamsiHoliday.html">shamsiHoliday</a></li>
+      <li><a href="persian_date/PersianDate/weekday.html">weekday</a></li>
+      <li><a href="persian_date/PersianDate/weekdayname.html">weekdayname</a></li>
+      <li><a href="persian_date/PersianDate/year.html">year</a></li>
+      <li class="inherited"><a href="persian_date/PersianDate/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="persian_date/PersianDate/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="persian_date/PersianDate-class.html#instance-methods">Methods</a></li>
+      <li><a href="persian_date/PersianDate/gregorianToJalali.html">gregorianToJalali</a></li>
+      <li><a href="persian_date/PersianDate/jalaliToGregorian.html">jalaliToGregorian</a></li>
+      <li><a href="persian_date/PersianDate/parse.html">parse</a></li>
+      <li><a href="persian_date/PersianDate/parseToFormat.html">parseToFormat</a></li>
+      <li class="inherited"><a href="persian_date/PersianDate/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="persian_date/PersianDate/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="persian_date/PersianDate-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="persian_date/PersianDate/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    jalali_calendar 0.0.2
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

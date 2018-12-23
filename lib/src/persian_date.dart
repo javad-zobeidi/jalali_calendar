@@ -1,4 +1,3 @@
-
 const String yyyy = 'yyyy'; // 4 عدد سال
 
 const String yy = 'yy'; // 2 عدد سال
@@ -49,10 +48,7 @@ const String u = 'u'; // نمایش میکرو ثانیه
 const String am = 'am'; // نمایش وقت به صورت کوتاه
 const String AM = 'AM'; // نمایش وقت به صورت کامل
 
-
-
 class PersianDate {
-
   int _year;
   int _month;
   int _day;
@@ -90,10 +86,8 @@ class PersianDate {
     }
   }
 
-  PersianDate([String format]){
-
-    if(format.isNotEmpty || format != null)
-      _defualtVal = format;
+  PersianDate([String format]) {
+    if (format != null) _defualtVal = format;
 
     _getNow = _now();
     _getDate = _now();
@@ -116,8 +110,7 @@ class PersianDate {
     this.setMicrosecond = now.microsecond;
     this.setMillisecond = now.millisecond;
 
-
-      return _toFormat(_defualtVal);
+    return _toFormat(_defualtVal);
   }
 
   List<String> monthShort = const <String>[
@@ -351,7 +344,7 @@ class PersianDate {
     _second = value;
   }
 
-  int get  microsecond => _microsecond;
+  int get microsecond => _microsecond;
 
   set setMicrosecond(int value) {
     _microsecond = value;
@@ -489,5 +482,4 @@ class PersianDate {
     }
     return ret;
   }
-
 }

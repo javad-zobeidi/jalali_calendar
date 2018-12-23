@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the build method from the DayPicker class, for the Dart programming language.">
+  <title>build method - DayPicker class - persian_date library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">jalali_calendar</a></li>
+    <li><a href="persian_date/persian_date-library.html">persian_date</a></li>
+    <li><a href="persian_date/DayPicker-class.html">DayPicker</a></li>
+    <li class="self-crumb">build method</li>
+  </ol>
+  <div class="self-name">build</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>DayPicker class</h5>
+    <ol>
+      <li class="section-title"><a href="persian_date/DayPicker-class.html#constructors">Constructors</a></li>
+      <li><a href="persian_date/DayPicker/DayPicker.html">DayPicker</a></li>
+    
+      <li class="section-title">
+        <a href="persian_date/DayPicker-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="persian_date/DayPicker/currentDate.html">currentDate</a></li>
+      <li><a href="persian_date/DayPicker/date.html">date</a></li>
+      <li><a href="persian_date/DayPicker/displayedMonth.html">displayedMonth</a></li>
+      <li><a href="persian_date/DayPicker/firstDate.html">firstDate</a></li>
+      <li><a href="persian_date/DayPicker/lastDate.html">lastDate</a></li>
+      <li><a href="persian_date/DayPicker/onChanged.html">onChanged</a></li>
+      <li><a href="persian_date/DayPicker/selectableDayPredicate.html">selectableDayPredicate</a></li>
+      <li><a href="persian_date/DayPicker/selectedDate.html">selectedDate</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/key.html">key</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="persian_date/DayPicker-class.html#instance-methods">Methods</a></li>
+      <li><a href="persian_date/DayPicker/build.html">build</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/createElement.html">createElement</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/debugDescribeChildren.html">debugDescribeChildren</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/debugFillProperties.html">debugFillProperties</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/toString.html">toString</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/toStringDeep.html">toStringDeep</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/toStringShallow.html">toStringShallow</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/toStringShort.html">toStringShort</a></li>
+    
+      <li class="section-title inherited"><a href="persian_date/DayPicker-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="persian_date/DayPicker-class.html#static-properties">Static properties</a></li>
+      <li><a href="persian_date/DayPicker/dayH.html">dayH</a></li>
+      <li><a href="persian_date/DayPicker/dayShort.html">dayShort</a></li>
+    
+      <li class="section-title"><a href="persian_date/DayPicker-class.html#static-methods">Static methods</a></li>
+      <li><a href="persian_date/DayPicker/getDaysInMonth.html">getDaysInMonth</a></li>
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>build method</h1>
+
+    <section class="multi-line-signature">
+      <div>
+        <ol class="annotation-list">
+          <li>@override</li>
+        </ol>
+      </div>
+      <span class="returntype">Widget</span>
+      <span class="name ">build</span>
+(<wbr><span class="parameter" id="build-param-context"><span class="type-annotation">BuildContext</span> <span class="parameter-name">context</span></span>)
+      
+    </section>
+    <section class="desc markdown">
+      <p>Describes the part of the user interface represented by this widget.</p>
+<p>The framework calls this method when this widget is inserted into the
+tree in a given <code>BuildContext</code> and when the dependencies of this widget
+change (e.g., an <code>InheritedWidget</code> referenced by this widget changes).</p>
+<p>The framework replaces the subtree below this widget with the widget
+returned by this method, either by updating the existing subtree or by
+removing the subtree and inflating a new subtree, depending on whether the
+widget returned by this method can update the root of the existing
+subtree, as determined by calling <code>Widget.canUpdate</code>.</p>
+<p>Typically implementations return a newly created constellation of widgets
+that are configured with information from this widget's constructor and
+from the given <code>BuildContext</code>.</p>
+<p>The given <code>BuildContext</code> contains information about the location in the
+tree at which this widget is being built. For example, the context
+provides the set of inherited widgets for this location in the tree. A
+given widget might be built with multiple different <code>BuildContext</code>
+arguments over time if the widget is moved around the tree or if the
+widget is inserted into the tree in multiple places at once.</p>
+<p>The implementation of this method must only depend on:</p><ul><li>the fields of the widget, which themselves must not change over time,
+and</li><li>any ambient state obtained from the <code>context</code> using
+<code>BuildContext.inheritFromWidgetOfExactType</code>.</li></ul>
+<p>If a widget's <a href="persian_date/DayPicker/build.html">build</a> method is to depend on anything else, use a
+<code>StatefulWidget</code> instead.</p>
+<p>See also:</p><ul><li><code>StatelessWidget</code>, which contains the discussion on performance considerations.</li></ul>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span> </h2>
+      <pre class="language-dart"><code class="language-dart">@override
+Widget build(BuildContext context) {
+  final ThemeData themeData = Theme.of(context);
+  final MaterialLocalizations localizations =
+  MaterialLocalizations.of(context);
+  final int year = displayedMonth.year;
+  final int month = displayedMonth.month;
+  final int mDay = displayedMonth.day;
+
+  final PersianDate getPearData =
+  PersianDate.pDate(gregorian: displayedMonth.toString());
+  final PersianDate selectedPersainDate =
+  PersianDate.pDate(gregorian: selectedDate.toString());
+  final PersianDate currentPDate =
+  PersianDate.pDate(gregorian: currentDate.toString());
+
+  final List&lt;Widget&gt; labels = &lt;Widget&gt;[];
+
+  var pDay = _digits(mDay, 2);
+  var gMonth = _digits(month, 2);
+
+  var parseP = date.parse(&quot;$year-$gMonth-$pDay&quot;);
+  var jtgData = date.jalaliToGregorian(parseP[0], parseP[1], 01);
+
+  var pMonth = _digits(jtgData[1], 2);
+
+  PersianDate pdate =
+  PersianDate.pDate(gregorian: &quot;${jtgData[0]}-$pMonth-${jtgData[2]}&quot;);
+  var daysInMonth = getDaysInMonth(pdate.year, pdate.month);
+  var startday = dayShort.indexOf(pdate.weekdayname);
+
+  labels.addAll(_getDayHeaders());
+  for (int i = 0; true; i += 1) {
+    final int day = i - startday + 1;
+    if (day &gt; daysInMonth) break;
+    if (day &lt; 1) {
+      labels.add(Container());
+    } else {
+      var pDay = _digits(day, 2);
+      var jtgData = date.jalaliToGregorian(
+          getPearData.year, getPearData.month, int.parse(pDay));
+      final DateTime dayToBuild =
+      DateTime(jtgData[0], jtgData[1], jtgData[2]);
+      final PersianDate getHolidy =
+      PersianDate.pDate(gregorian: dayToBuild.toString());
+
+      final bool disabled = dayToBuild.isAfter(lastDate) ||
+          dayToBuild.isBefore(firstDate) ||
+          (selectableDayPredicate != null &amp;&amp;
+              !selectableDayPredicate(dayToBuild));
+
+      BoxDecoration decoration;
+      TextStyle itemStyle = themeData.textTheme.body1;
+
+      final bool isSelectedDay =
+          selectedPersainDate.year == getPearData.year &amp;&amp;
+              selectedPersainDate.month == getPearData.month &amp;&amp;
+              selectedPersainDate.day == day;
+      if (isSelectedDay) {
+        &#47;&#47; The selected day gets a circle background highlight, and a contrasting text color.
+        itemStyle = themeData.accentTextTheme.body2;
+        decoration = BoxDecoration(
+            color: themeData.accentColor, shape: BoxShape.circle);
+      } else if (disabled) {
+        itemStyle = themeData.textTheme.body1
+            .copyWith(color: themeData.disabledColor);
+      } else if (currentPDate.year == getPearData.year &amp;&amp;
+          currentPDate.month == getPearData.month &amp;&amp;
+          currentPDate.day == day) {
+        &#47;&#47; The current day gets a different text color.
+        itemStyle =
+            themeData.textTheme.body2.copyWith(color: themeData.accentColor);
+      } else if (getHolidy.isHoliday) {
+        &#47;&#47; The current day gets a different text color.
+        itemStyle = themeData.textTheme.body2.copyWith(color: Colors.red);
+      }
+      Widget dayWidget = Container(
+        decoration: decoration,
+        child: Center(
+          child: Semantics(
+            &#47;&#47; We want the day of month to be spoken first irrespective of the
+            &#47;&#47; locale-specific preferences or TextDirection. This is because
+            &#47;&#47; an accessibility user is more likely to be interested in the
+            &#47;&#47; day of month before the rest of the date, as they are looking
+            &#47;&#47; for the day of month. To do that we prepend day of month to the
+            &#47;&#47; formatted full date.
+            label:
+            &#39;${localizations.formatDecimal(day)}, ${localizations.formatFullDate(dayToBuild)}&#39;,
+            selected: isSelectedDay,
+            child: ExcludeSemantics(
+              child: Text(localizations.formatDecimal(day), style: itemStyle),
+            ),
+          ),
+        ),
+      );
+
+      if (!disabled) {
+        dayWidget = GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onTap: () {
+            onChanged(dayToBuild);
+          },
+          child: dayWidget,
+        );
+      }
+
+      labels.add(dayWidget);
+    }
+  }
+
+  return Padding(
+    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+    child: Directionality(
+        textDirection: TextDirection.rtl,
+        child: Column(
+          children: &lt;Widget&gt;[
+            Container(
+              height: _kDayPickerRowHeight,
+              child: Center(
+                child: ExcludeSemantics(
+                  child: Text(
+                    &quot;${pdate.monthname}  ${pdate.year}&quot;,
+                    style: themeData.textTheme.subhead,
+                  ),
+                ),
+              ),
+            ),
+            Flexible(
+              child: GridView.custom(
+                gridDelegate: _kDayPickerGridDelegate,
+                childrenDelegate: SliverChildListDelegate(labels,
+                    addRepaintBoundaries: false),
+              ),
+            ),
+          ],
+        )),
+  );
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    jalali_calendar 0.0.2
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

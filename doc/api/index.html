@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.24.1">
+  <meta name="description" content="jalali_calendar API docs, for the Dart programming language.">
+  <title>jalali_calendar - Dart API docs</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="https://github.com/irdeveloper89/jalali_calendar">jalali_calendar package</a></li>
+  </ol>
+  <div class="self-name">jalali_calendar</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><span class="package-name">jalali_calendar</span> <span class="package-kind">package</span></h5>
+    <ol>
+          <li class="section-title">Libraries</li>
+          <li><a href="persian_date/persian_date-library.html">persian_date</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <section class="desc markdown">
+        <h1 id="persian_datewith_calendar_and_date_picker">Persian_DateWith_Calendar_And_Date_Picker</h1>
+<p>مبدل تاریخ هجری شمسی همراه با تقویم شمسی و  Date Picker شمسی 
+و همراه با تعطیلات رسمی برای شمسی برای فلاتر</p>
+<h2 id="-">پیاده سازی</h2>
+<p>برای درک بهتر به نمونه کد مراجعه نمایید.</p>
+<pre class="language-dart"><code class="language-dart">
+import 'package:jalali_calendar/persian_date.dart';
+
+// جهت استفاده از تقویم از متد زیر استفاده نماید.
+Future _selectDate() async {
+    String picked =
+        await jalaliCalendarPicker(context: context);
+    if (picked != null) setState(() =&gt; _value =picked.toString());
+  }
+  
+  
+
+// نمایش و استفاده از Date Picker
+DatePicker.showDatePicker();
+// این دو مورد الزامی می باشند
+// minYear: 1300 // تاریخ شروع
+// maxYear: 1450 // تاریخ اتمام
+
+/*
+در صورتی که میخواهید تاریخ مورد نظر نمایش داده شود این سه مورد وارد شوند در غییر این صورت تاریخ فعلی انتخاب خواهد شد.
+    int initialYear,
+    int initialMonth,
+    int initialDate,
+
+
+دکمه های تایید و لغو
+Widget cancel
+Widget confirm
+    ویجت Text باشند
+    
+   متد های باز گشتی   
+   
+   DateChangedCallback onChanged, زمانی که دیتا پیکر تغییر کند برگشت داده میشود
+   DateChangedCallback onConfirm, زمانی که تایید میشود برگشت داده میشوند
+       
+     
+     
+        
+ */
+
+// استفاده از مبدل شمسی
+
+PersianDate persianDate = PersianDate("yyyy/mm/dd  \n DD  , d  MM  ");
+یا
+
+PersianDate persianDate = PersianDate();
+
+persianDate.getNow // تاریخ فعلی
+
+PersianDate date = PersianDate.pDate(gregorian: "1989-08-18"); // برگشت تاریخ مشخص
+
+date.getDate 
+
+// برگرداندن یک تاریخ خاص از سال میلادی
+    var Gdate = new DateTime(1989,08,21);
+    print("${date.parse(Gdate.toString(),"/")}"); // اگر جدا کننده قرار داده نشود به صورت یک لیست بر میگرداند
+    print("${date.parse(Gdate.toString())}"); // 
+  
+  // با فرمت دلخواه
+  print("${date.parseToFormat(Gdate.toString())}");
+  print("${date.parseToFormat(Gdate.toString(),"yyyy-m-dd h:n:ss")}");
+  
+     // تبدیل تاریخ شمسی به میلادی اگر جدا کننده نداشته باشه به صورت یک لیست بر میگرداند
+print(date.jalaliToGregorian(1397, 09, 12));
+
+  // مواردی که میتوانید با فراخوانی دریافت کنید.
+  print(date.isHoliday); // روز تعطیل است یا خیر
+  print(date.weekdayname); // نام روز
+  print(date.monthname); // نام ماه
+    print(date.year); // سال 
+    print(date.month); // ماه
+    print(date.day); // روز
+    print(date.hour);// ساعت
+    print(date.minute);// دقیقه
+    print(date.second);// ثانیه
+    print(date.millisecond); // میلی ثانیه
+    print(date.microsecond);// میکرو ثانیه
+</code></pre>
+<p>کلید فرمت های که میتوانید استفاده کنید</p>
+<p>yyyy // 4 عدد سال</p>
+<p>yy // 2 عدد سال</p>
+<p>mm // 2 عدد ماه اگر ماه تک رقمی باشد 0 در اول ان قرار میدهد</p>
+<p>m // 1 عدد ماه اگر ماه تک رقمی باشد 0 قرار نمیدهد</p>
+<p>MM // ماه به صورت حروفی کامل</p>
+<p>M // ماه به صورت حروفی کوتاه</p>
+<p>dd // روز به صورت 2 عددی</p>
+<p>d // روز به صورت تک رقمی برای روز های زیر 10</p>
+<p>w // عدد هفته از ماه را بر میگرداند</p>
+<p>DD // نام روز</p>
+<p>D // نام روز</p>
+<p>hh // ساعت با دو رقم اگر ساعت تک رقمی باشد 0 ابتدای عدد قرار میدهد فرمت 12 ساعته</p>
+<p>h // ساعت با تک رقم فرمت 12 ساعته </p>
+<p>HH // ساعت با 2 رقم فرمت 24 ساعته </p>
+<p>H // ساعت با تک رقم فرمت 24 ساعته</p>
+<p>nn // نمایشه دقیقه به صورت دو رقمی</p>
+<p>n // نمایشه دقیقه به صورت تک رقمی</p>
+<p>ss // نمایش ثانیه دو رقمی</p>
+<p>s  // نمایش ثانیه تک رقمی</p>
+<p>SSS // نمایش میلی ثانیه</p>
+<p>S // نمایش میلی ثانیه</p>
+<p>uuu // نمایش میکرو ثانیه</p>
+<p>u // نمایش میکرو ثانیه</p>
+<p>am // نمایش وقت به صورت کوتاه </p>
+<p>AM // نمایش وقت به صورت کامل</p>
+<h2 id="--2">گزارش اشکال</h2>
+<p>در صورت وجود هر گونه مشکل از طریق ایمیل زیر با ما در میان بگذارید<a href="mailto:j.zobeidi89@gmail.com">j.zobeidi89@gmail.com</a>.</p>
+      </section>
+      
+        <section class="summary">
+            <h2>Libraries</h2>
+          <dl>
+            <dt id="persian_date">
+              <span class="name"><a href="persian_date/persian_date-library.html">persian_date</a></span> 
+            </dt>
+            <dd>
+              Javad Zobeidi <a href="persian_date/persian_date-library.html">[...]</a>
+            </dd>          </dl>
+        </section>
+
+  </div> <!-- /.main-content -->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    jalali_calendar 0.0.2
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

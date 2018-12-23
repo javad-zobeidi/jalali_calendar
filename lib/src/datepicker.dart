@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:jalali_calendar/jalali_calendar.dart';
+import 'package:persian_date/persian_date.dart';
 
 typedef DateChangedCallback(int year, int month, int date);
 
@@ -37,7 +37,7 @@ class DatePicker {
       dateFormat = _kDateFormatDefault;
     }
 
-    PersianDate now = PersianDate.pDate();
+    PersianDate now = PersianDate();
     if (initialYear == null) {
       initialYear = now.year;
     }
@@ -448,7 +448,6 @@ class _DatePickerState extends State<_DatePickerComponent> {
     );
   }
 
-
   String _digits(int value, int length) {
     String ret = '$value';
     if (ret.length < length) {
@@ -456,7 +455,6 @@ class _DatePickerState extends State<_DatePickerComponent> {
     }
     return ret;
   }
-
 
   // Title View
   Widget _renderTitleActionsView() {
@@ -504,8 +502,10 @@ class _DatePickerState extends State<_DatePickerComponent> {
               child: confirmWidget,
               onPressed: () {
                 if (widget.route.onConfirm != null) {
-                  widget.route
-                      .onConfirm(int.parse(_digits(_currentYear, 2)),int.parse(_digits(_currentMonth, 2)) ,int.parse(_digits(_currentDate, 2)) );
+                  widget.route.onConfirm(
+                      int.parse(_digits(_currentYear, 2)),
+                      int.parse(_digits(_currentMonth, 2)),
+                      int.parse(_digits(_currentDate, 2)));
                 }
                 Navigator.pop(context);
               },

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the DayPicker constructor from the Class DayPicker class from the persian_date library, for the Dart programming language.">
+  <title>DayPicker constructor - DayPicker class - persian_date library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">jalali_calendar</a></li>
+    <li><a href="persian_date/persian_date-library.html">persian_date</a></li>
+    <li><a href="persian_date/DayPicker-class.html">DayPicker</a></li>
+    <li class="self-crumb">DayPicker constructor</li>
+  </ol>
+  <div class="self-name">DayPicker</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>DayPicker class</h5>
+    <ol>
+      <li class="section-title"><a href="persian_date/DayPicker-class.html#constructors">Constructors</a></li>
+      <li><a href="persian_date/DayPicker/DayPicker.html">DayPicker</a></li>
+    
+      <li class="section-title">
+        <a href="persian_date/DayPicker-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="persian_date/DayPicker/currentDate.html">currentDate</a></li>
+      <li><a href="persian_date/DayPicker/date.html">date</a></li>
+      <li><a href="persian_date/DayPicker/displayedMonth.html">displayedMonth</a></li>
+      <li><a href="persian_date/DayPicker/firstDate.html">firstDate</a></li>
+      <li><a href="persian_date/DayPicker/lastDate.html">lastDate</a></li>
+      <li><a href="persian_date/DayPicker/onChanged.html">onChanged</a></li>
+      <li><a href="persian_date/DayPicker/selectableDayPredicate.html">selectableDayPredicate</a></li>
+      <li><a href="persian_date/DayPicker/selectedDate.html">selectedDate</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/key.html">key</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="persian_date/DayPicker-class.html#instance-methods">Methods</a></li>
+      <li><a href="persian_date/DayPicker/build.html">build</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/createElement.html">createElement</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/debugDescribeChildren.html">debugDescribeChildren</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/debugFillProperties.html">debugFillProperties</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/toString.html">toString</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/toStringDeep.html">toStringDeep</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/toStringShallow.html">toStringShallow</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/toStringShort.html">toStringShort</a></li>
+    
+      <li class="section-title inherited"><a href="persian_date/DayPicker-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="persian_date/DayPicker/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="persian_date/DayPicker-class.html#static-properties">Static properties</a></li>
+      <li><a href="persian_date/DayPicker/dayH.html">dayH</a></li>
+      <li><a href="persian_date/DayPicker/dayShort.html">dayShort</a></li>
+    
+      <li class="section-title"><a href="persian_date/DayPicker-class.html#static-methods">Static methods</a></li>
+      <li><a href="persian_date/DayPicker/getDaysInMonth.html">getDaysInMonth</a></li>
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>DayPicker constructor</h1>
+
+    <section class="multi-line-signature">
+      
+      <span class="name ">DayPicker</span>(<wbr>{<span class="parameter" id="-param-key"><span class="type-annotation">Key</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="-param-selectedDate"><span>@required</span> <span class="type-annotation">DateTime</span> <span class="parameter-name">selectedDate</span>, </span> <span class="parameter" id="-param-currentDate"><span>@required</span> <span class="type-annotation">DateTime</span> <span class="parameter-name">currentDate</span>, </span> <span class="parameter" id="-param-onChanged"><span>@required</span> <span class="type-annotation">ValueChanged<span class="signature">&lt;<wbr><span class="type-parameter">DateTime</span>&gt;</span></span> <span class="parameter-name">onChanged</span>, </span> <span class="parameter" id="-param-firstDate"><span>@required</span> <span class="type-annotation">DateTime</span> <span class="parameter-name">firstDate</span>, </span> <span class="parameter" id="-param-lastDate"><span>@required</span> <span class="type-annotation">DateTime</span> <span class="parameter-name">lastDate</span>, </span> <span class="parameter" id="-param-displayedMonth"><span>@required</span> <span class="type-annotation">DateTime</span> <span class="parameter-name">displayedMonth</span>, </span> <span class="parameter" id="-param-selectableDayPredicate"><span class="type-annotation"><a href="persian_date/SelectableDayPredicate.html">SelectableDayPredicate</a></span> <span class="parameter-name">selectableDayPredicate</span></span> })
+    </section>
+
+    <section class="desc markdown">
+      <p>Creates a day picker.</p>
+<p>Rarely used directly. Instead, typically used as part of a <a href="persian_date/MonthPicker-class.html">MonthPicker</a>.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span> </h2>
+      <pre class="language-dart"><code class="language-dart">DayPicker({
+  Key key,
+  @required this.selectedDate,
+  @required this.currentDate,
+  @required this.onChanged,
+  @required this.firstDate,
+  @required this.lastDate,
+  @required this.displayedMonth,
+  this.selectableDayPredicate,
+})  : assert(selectedDate != null),
+      assert(currentDate != null),
+      assert(onChanged != null),
+      assert(displayedMonth != null),
+      assert(!firstDate.isAfter(lastDate)),
+      assert(selectedDate.isAfter(firstDate) ||
+          selectedDate.isAtSameMomentAs(firstDate)),
+      super(key: key);</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    jalali_calendar 0.0.2
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>
