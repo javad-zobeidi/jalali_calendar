@@ -5,7 +5,7 @@ Calendar , Datepicker and Date Convertor For Persian Date(Jalali/Shamsi date) wi
 Based on Material  Flutter DatePicker And TimePicker
 
 
-![](https://charax.ir/flutters/jalali_datepicker.gif)
+![](https://github.com/irdeveloper89/jalali_calendar/blob/master/screenshots/screenshots.gif)
 
 ## Usage 
 
