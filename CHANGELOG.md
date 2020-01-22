@@ -1,3 +1,12 @@
+## 1.0.3
+* Fixed displayed month bug
+
+## 1.0.2
+* delete print method from lib
+
+## 1.0.1
+* Update Some code
+
 ## 1.0.0
 * Fixed Selected Day
 * Relpace intl package with jiffy

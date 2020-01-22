@@ -407,8 +407,10 @@ class DayPicker extends StatelessWidget {
 
     final PersianDate getPearData =
         PersianDate.pDate(gregorian: displayedMonth.toString());
+
     final PersianDate selectedPersainDate =
         PersianDate.pDate(gregorian: selectedDate.toString());
+        
     final PersianDate currentPDate =
         PersianDate.pDate(gregorian: currentDate.toString());
 
@@ -662,17 +664,37 @@ class _MonthPickerState extends State<MonthPicker>
   DateTime _addMonthsToMonthDate(DateTime monthDate, int monthsToAdd) {
     return DateTime(
         monthDate.year + monthsToAdd ~/ 12, monthDate.month + monthsToAdd % 12);
+
+        
   }
+
+
+Map<int,int> convertMonth = {
+  10:1,
+  11:2,
+  12:3,
+  01:4,
+  02:5,
+  03:6,
+  04:7,
+  05:8,
+  06:9,
+  07:10,
+  08:11,
+  09:12,
+};
 
   Widget _buildItems(BuildContext context, int index) {
     final DateTime month = _addMonthsToMonthDate(widget.firstDate, index);
+    final PersianDate selectedPersainDate =
+        PersianDate.pDate(gregorian: widget.selectedDate.toString()); // To Edit Month Displaye
     return DayPicker(
       selectedDate: widget.selectedDate,
       currentDate: _todayDate,
       onChanged: widget.onChanged,
       firstDate: widget.firstDate,
       lastDate: widget.lastDate,
-      displayedMonth: month,
+      displayedMonth: DateTime.utc(month.year,convertMonth[selectedPersainDate.month],1),
       selectableDayPredicate: widget.selectableDayPredicate,
     );
   }
@@ -1047,7 +1069,6 @@ class _DatePickerDialogState extends State<_DatePickerDialog> {
     if (widget.showTimePicker) {
       final time = await _getTime(context,
           initialTime: widget.initialTime, hore24Format: widget.hore24Format);
-      print(time);
       time != null
           ? _selectedDate = new DateTime.utc(
               _selectedDate.year,
@@ -1276,8 +1297,6 @@ Future<String> jalaliCalendarPicker({
     initialTime: initialTime ?? TimeOfDay.now(),
   );
 
-  print(
-      "textDirectiontextDirectiontextDirectiontextDirectiontextDirection $textDirection");
   if (textDirection != null) {
     child = Directionality(
       textDirection: textDirection,
