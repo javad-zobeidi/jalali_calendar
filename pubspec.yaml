@@ -1,6 +1,6 @@
 name: jalali_calendar
 description: Calendar , Datepicker and Date Convertor For Persian Date(Jalali/Shamsi date) with holiday for Android and Ios
-version: 1.0.3
+version: 1.0.3+1
 homepage: https://github.com/irdeveloper89/jalali_calendar
 
 environment:
