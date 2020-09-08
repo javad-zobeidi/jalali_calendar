@@ -2,12 +2,6 @@
 ## Jalali/Shamsi Calendar  Datepicker and TimePicker
 Calendar , Datepicker and Date Convertor For Persian Date(Jalali/Shamsi date) with holiday for Android and Ios
 
-### This is a temporary fork to add ability to receive "initialDate" is an input parameter to "jalaliCalendarPicker"
-### add this temporary package to your pubspec.yaml in the following format:
-####   jalali_calendar: 
-####    git: https://github.com/hrmoh/jalali_calendar
-
-
 Based on Material  Flutter DatePicker And TimePicker
 
 
