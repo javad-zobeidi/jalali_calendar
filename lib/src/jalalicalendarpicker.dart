@@ -1239,20 +1239,20 @@ typedef SelectableDayPredicate = bool Function(DateTime day);
 ///
 ///  * [showTimePicker]
 ///  * <https://material.google.com/components/pickers.html#pickers-date-pickers>
-Future<String> jalaliCalendarPicker({
-  @required BuildContext context,
-  SelectableDayPredicate selectableDayPredicate,
-  DatePickerMode initialDatePickerMode = DatePickerMode.day,
-  String selectedFormat,
-  bool toArray,
-  Locale locale,
-  TextDirection textDirection = TextDirection.rtl,
-  bool convertToGregorian = false,
-  bool showTimePicker = false,
-  bool hore24Format = false,
-  TimeOfDay initialTime,
-}) async {
-  DateTime initialDate = DateTime.now();
+Future<String> jalaliCalendarPicker(
+    {@required BuildContext context,
+    SelectableDayPredicate selectableDayPredicate,
+    DatePickerMode initialDatePickerMode = DatePickerMode.day,
+    String selectedFormat,
+    bool toArray,
+    Locale locale,
+    TextDirection textDirection = TextDirection.rtl,
+    bool convertToGregorian = false,
+    bool showTimePicker = false,
+    bool hore24Format = false,
+    TimeOfDay initialTime,
+    DateTime initialDate}) async {
+  initialDate = initialDate ?? DateTime.now();
   DateTime firstDate = DateTime(1700);
   DateTime lastDate = DateTime(2200);
 
