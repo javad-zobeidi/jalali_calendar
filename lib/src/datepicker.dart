@@ -62,7 +62,7 @@ class DatePicker {
         onChanged: onChanged,
         onConfirm: onConfirm,
         dateFormat: dateFormat,
-        theme: Theme.of(context, shadowThemeOnly: true),
+        theme: Theme.of(context),
         barrierLabel:
             MaterialLocalizations.of(context).modalBarrierDismissLabel,
       ),
