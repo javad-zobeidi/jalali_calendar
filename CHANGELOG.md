@@ -1,3 +1,5 @@
+## 1.0.4
+* update dependencys
 ## 1.0.3+1
 * format code
 
